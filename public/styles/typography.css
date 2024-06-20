@@ -1,18 +1,18 @@
-/* could we pull in @fonts here? */
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 .loud-voice	{
-	font-family: sans-serif;
-	font-size: clamp(36px, 5vw, 60px);
-}
-@media (min-width: 600px) {
-	.loud-voice {
-		font-weight: 700; /* or variable font */
-	}
+	font-family: "Merriweather", serif;
+	font-size: clamp(36px, 5vw, 50px);
+	font-weight: 500;
 }
 
 .attention-voice	{
-	font-family: sans-serif;
+	font-family: "Merriweather", serif;
 	font-size: 30px;
+}
+
+.small-attention-voice {
+	font-family: "Merriweather", serif;
+	font-size: 20px;
 }
 
 .strong-voice	{
@@ -22,9 +22,16 @@
 }
 
 .calm-voice, p, li {
-	font-family: sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1rem;
 	line-height: 1.4;
+}
+
+.caption-voice {
+	font-family: "Open Sans", sans-serif;
+	font-size: .8rem;
+	color: rgb(0 0 0 / .6);
+	max-width: 65ch;
 }
 
 :is(.calm-voice, p, li) em {
@@ -42,7 +49,7 @@ p + p {
 }
 
 h2 + p {
-	margin-top: 20px;
+	margin-top: 1rem;
 }
 
 code {

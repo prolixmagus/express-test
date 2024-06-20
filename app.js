@@ -24,7 +24,7 @@ const families = [
         "population": "1.5 million",
         "image" : {
             "figure": "/images/uzo-aztecan.png",
-            "figcaption": "Nahuatl, a Uto-Aztecan language, was the language of the Aztec Empire and continues to be spoken by over 1.5 million people today.",
+            "figcaption": "Nahuatl was the language of the Aztec Empire and continues to be spoken and taught today.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -37,7 +37,7 @@ const families = [
         "population": "1.5 billion",
         "image" : {
             "figure": "/images/sino-tibetan.png",
-            "figcaption": "Mandarin Chinese, a prominent Sino-Tibetan language, is the most spoken language in the world by native speakers.",
+            "figcaption": "Mandarin Chinese is the most spoken language in the world by native speakers.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -50,7 +50,7 @@ const families = [
         "population": "1.2 billion",
         "image" : {
             "figure": "/images/romance.png",
-            "figcaption": "The Romance languages evolved from Vulgar Latin and include French, Spanish, Italian, Portuguese, and more.",
+            "figcaption": "The Romance languages evolved from Vulgar Latin.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -63,7 +63,7 @@ const families = [
         "population": "495 million",
         "image" : {
             "figure": "/images/afroasiatic.png",
-            "figcaption": "Arabic, an Afroasiatic language, is the liturgical language of over 1.8 billion Muslims worldwide.",
+            "figcaption": "Arabic is the liturgical language of over 1.8 billion Muslims worldwide.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -76,7 +76,7 @@ const families = [
         "population": "2.4 billion",
         "image" : {
             "figure": "/images/germanic.png",
-            "figcaption": "English, a Germanic language, has the largest vocabulary of any language, with over 1 million words.",
+            "figcaption": "English has the largest vocabulary of any language with over 1 million words.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -89,7 +89,7 @@ const families = [
         "population": "386 million",
         "image" : {
             "figure": "/images/austronesian.png",
-            "figcaption": "The Austronesian language family includes Hawaiian, Maori, Tagalog, and Indonesian, spread across the islands of the Pacific.",
+            "figcaption": "The Austronesian language family spread across the islands of the Pacific through seafaring.",
             "alt": "Map of region where languages are spoken"
         }
     },
@@ -130,10 +130,6 @@ app.get('/', function(request, response) {
 
 app.get('/contact', function(request, response) {
 	response.render('contact');
-})
-
-app.get('/api', function(request, response) {
-	response.send({ "name": "Jelene", "occupation": "sexy"})
 })
 
 // If no route defined ... 404 error

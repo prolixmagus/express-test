@@ -1,13 +1,13 @@
 html {
 	--black: #111111;
-	--white: #efefef;
+	--white: ##F8F9F9
 
 	--neutral-stuffs: gray;
 
 	--color: #9ec9eb;
 	--highlight: #aadee9;
 
-	--shadow: rgba(0, 0, 0, 0.8);
+	--shadow: rgba(0, 0, 0, 0.5);
 
 	--corners: 10px; /* or whatevers */
 

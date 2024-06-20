@@ -1,0 +1,9 @@
+footer {
+	background-color: #BBDAA4;
+	margin-top: 10vh;
+	min-height: 20vh;
+
+	h2 {
+		margin-top: 2rem;
+	}
+}

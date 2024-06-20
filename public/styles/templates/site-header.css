@@ -1,3 +1,29 @@
 .site-header {
 	padding-block: 1em;
+	background-color: #BBDAA4;
+
+	mast-head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		logo {
+			display: flex;
+			align-items: center;
+
+			.globe {
+				display: block;
+				max-width: 30px;
+			}
+			h1 {
+				font-family: "Merriweather";
+				font-weight: 500;
+			}
+		}
+
+		a {
+			font-family: "Open Sans";
+		}
+	}
 }

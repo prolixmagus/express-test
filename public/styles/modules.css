@@ -1,1 +1,4 @@
-@import 'templates/site-header.css'
+@import 'templates/site-header.css';
+@import 'templates/page-header.css';
+@import 'templates/language-card.css';
+@import 'templates/site-footer.css';

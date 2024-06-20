@@ -1,0 +1,59 @@
+.language-detail figure + .info-section {
+	margin-top: 8px;
+}
+
+.language-card h3 {
+	border-bottom: 10px solid #BBDAA4;
+	max-width: 250px;
+
+}
+
+.language-detail {
+	margin-top: 1em;
+	picture {
+		box-shadow: 0px 2px 5px 0px var(--shadow);
+	}
+	figcaption {
+		margin-top: 4px;
+	}
+}
+
+.info-section li + li {
+	margin-top: 1em;
+}
+
+.info-section {
+	h4 {
+		font-size: 16px;
+		font-weight: 700;
+
+		p {
+			margin-top: 12px;
+		}
+	}
+}
+
+.language-card + .language-card {
+	margin-top: 5vh;
+}
+
+@media (min-width: 768px) {
+	.language-detail figure + .info-section {
+		margin-top: 0;
+	}
+	
+	.language-detail {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 2em;
+
+		figure {
+			width: 70%;
+		}
+
+		.info-section {
+			width: 40%;
+		}
+
+	}
+}
