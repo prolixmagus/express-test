@@ -1,39 +1,32 @@
-
-
-
-<% families.forEach((family) => { %>
-
-	<li class='language-card'>
-		<h3 class='small-attention-voice'><%= family.family %></h3>
-		<article class='language-detail'>
-			<figure>
-				<picture>
-					<img src='<%= family.image.figure %>' family.image.alt='<%= family.image.alt %>'>
-				</picture>
-				<figcaption class='caption-voice'> <%= family.image.figcaption %> 
-				</figcaption>
-			</figure>
-			<div class='info-section'>
-				<ul>
-					<li>
-						<h4>Examples</h4>
-						<p><%= family.languages.join(', ')%></p>
-					</li>
-					<li>
-						<h4>Prominent Countries</h4>
-						<p><%= family.countries.join(', ')%></p>
-					</li>
-					<li>
-						<h4>Most Spoken</h4>
-						<p><%= family.mostSpoken %></p>
-					</li>
-					<li>
-						<h4>Worldwide Speakers</h4>
-						<p><%= family.population %> speakers</p>
-					</li>
-				</ul>
-			</div>
-		</article>
-	</li>
-
-<% }) %>
+<li class='language-card'>
+	<h3 class='small-attention-voice'><%= family.family %></h3>
+	<article class='language-detail'>
+		<figure>
+			<picture>
+				<img src='<%= family.image.figure %>' family.image.alt='<%= family.image.alt %>'>
+			</picture>
+			<figcaption class='caption-voice'> <%= family.image.figcaption %> 
+			</figcaption>
+		</figure>
+		<div class='info-section'>
+			<ul>
+				<li>
+					<h4>Examples</h4>
+					<p><%= family.languages.join(', ')%></p>
+				</li>
+				<li>
+					<h4>Prominent Countries</h4>
+					<p><%= family.countries.join(', ')%></p>
+				</li>
+				<li>
+					<h4>Most Spoken</h4>
+					<p><%= family.mostSpoken %></p>
+				</li>
+				<li>
+					<h4>Worldwide Speakers</h4>
+					<p><%= family.population %> speakers</p>
+				</li>
+			</ul>
+		</div>
+	</article>
+</li>

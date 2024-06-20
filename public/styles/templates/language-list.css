@@ -1,0 +1,9 @@
+.family-list {
+	a {
+		display: flex;
+		gap: 10px;
+	}
+	a::before {
+		content: '✿';
+	}
+}

@@ -1,3 +1,5 @@
+
+
 <%- include('header.ejs') %>
 
 <%- include('page-header.ejs') %>
@@ -5,7 +7,12 @@
 <section>
 	<inner-column>
 		<ul class='family-list'>
-			<%- include('language-card.ejs') %>
+			
+			<%familyData.forEach((family) => { %>
+			<li>
+				<a href='/detail/<%=family.id%>' class='small-attention-voice'><%= family.family %></a>
+			</li>
+			<% }) %>
 		</ul>
 	</inner-column>
 </section>

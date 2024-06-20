@@ -3,7 +3,7 @@
 }
 
 .language-card h3 {
-	border-bottom: 10px solid #BBDAA4;
+	border-bottom: 10px solid var(--green);
 	max-width: 250px;
 
 }

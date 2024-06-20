@@ -1,6 +1,6 @@
 .site-header {
 	padding-block: 1em;
-	background-color: #BBDAA4;
+	background-color: var(--green);
 
 	mast-head {
 		display: flex;
@@ -22,8 +22,18 @@
 			}
 		}
 
-		a {
+		nav ul {
+			display: flex;
+			text-decoration: none;
+			gap: 1rem;
+
+			li {
+			text-decoration: none;
+			}
+
+			a {
 			font-family: "Open Sans";
+			}
 		}
 	}
 }

@@ -1,8 +1,4 @@
-import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const familyData = [
+[
     {
         "id": "A1",
         "family": "Uto-Aztecan Languages",
@@ -108,45 +104,3 @@ const familyData = [
         }
     }
 ]
-
-familyData.sort((a, b) => a.family.localeCompare(b.family));
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-const app = express();
-const PORT = 1982;
-
-// auto serve up static files in the public directory
-app.use(express.static('public'));
-
-// Set up ejs view engine
-
-app.set('view engine', 'ejs');
-
-// Page routing
-app.get('/', function(request, response) {
-	//can send in a variable or list or complex object
-	response.render('language-list', { 
-        pageName: 'The Family Tree', 
-        intro: 'default', 
-        familyData: familyData
-    });
-})
-
-app.get('/detail/:id/', function(request, response) {
-    const family = familyData.find((family) => family.id === request.params.id)
-    response.render('detail', { family })
-})
-
-// If no route defined ... 404 error
-app.use(function(request, response) {
-  response.status(404).send("Sorry can't find that!")
-})
-
-app.listen(PORT, function(error) {
-	if (error) console.log(error)
-	console.log(`Server listening on PORT ${PORT}`)
-});
-
-
-

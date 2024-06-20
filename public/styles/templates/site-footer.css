@@ -1,5 +1,5 @@
 footer {
-	background-color: #BBDAA4;
+	background-color: var(--green);
 	margin-top: 10vh;
 	min-height: 20vh;
 

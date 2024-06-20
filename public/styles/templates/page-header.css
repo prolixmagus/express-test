@@ -1,3 +1,6 @@
 .page-header {
 	margin-block: 5vh;
+	p {
+		font-size: .9rem;
+	}
 }

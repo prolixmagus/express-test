@@ -1,6 +1,7 @@
 html {
 	--black: #111111;
-	--white: ##F8F9F9
+	--white: ##F8F9F9;
+	--green: #BBDAA4;
 
 	--neutral-stuffs: gray;
 
@@ -22,5 +23,6 @@ html {
 	html {
 		--paper: #231a1a;
 		--ink: #ffffe2;
+		--green: #5E6D52;
 	}
 }
