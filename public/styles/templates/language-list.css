@@ -1,9 +1,30 @@
 .family-list {
+	display: grid;
+	gap: 16px;
 	a {
 		display: flex;
-		gap: 10px;
+		font-size: .9em;
+		text-decoration: underline;
 	}
-	a::before {
+
+	h2::after {
 		content: '✿';
+		padding-left: 10px;
 	}
+}
+
+.family-list h2 + p {
+	margin-top: 0;
+}
+
+li.americas {
+	border: 2px solid orange;
+}
+
+li.asia {
+	border: 2px solid blue;
+}
+
+li.africa {
+	border: 2px solid red;
 }

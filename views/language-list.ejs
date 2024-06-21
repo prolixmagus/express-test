@@ -1,18 +1,36 @@
-
-
 <%- include('header.ejs') %>
 
-<%- include('page-header.ejs') %>
+<%- include('page-header.ejs', { 
+		intro : 'These are only 5% of the language families spoken around the world. 147 language families ... who\'s hosting the reunion?',
+		pageName : 'Family Tree', 
+		}) 
+%>
 
 <section>
 	<inner-column>
 		<ul class='family-list'>
 			
 			<%familyData.forEach((family) => { %>
-				<li>
-					<a href='/detail/<%=family.id%>' class='small-attention-voice'><%= family.family %></a>
+
+
+				<%function checkLocation() {
+					if (family.location.includes("North America")) {
+							return "americas";
+						} else if (family.location.includes("Asia")) {
+							return "asia";
+						} else if (family.location.includes("Africa")) {
+							return "africa";
+						}
+					}
+				%>
+
+				<li class=<%=checkLocation()%>>
+						<h2 class='small-attention-voice'><%= family.family %></h2>
+						<a href='/detail/<%= family.slug %>'>See more</a>
 				</li>
+
 			<% }) %>
+
 		</ul>
 	</inner-column>
 </section>
