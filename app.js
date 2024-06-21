@@ -145,7 +145,7 @@ app.use(function(request, response) {
 
 app.listen(PORT, function(error) {
 	if (error) console.log(error)
-	console.log(`Server listening on PORT ${PORT}`)
+	console.log(`Server listening on PORT: ${PORT}`)
 });
 
 
