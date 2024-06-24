@@ -118,7 +118,7 @@ html {
   --corners: 10px; /* or whatevers */
   --paper: var(--white);
   --ink: var(--black);
-  --standard: 1200px;
+  --standard: 1000px;
   --tight: 800px;
 }
 
