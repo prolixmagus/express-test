@@ -1,4 +1,4 @@
-import * from 'dotenv'
+import * as dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
