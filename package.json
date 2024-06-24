@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:express": "npx nodemon",
     "watch:sass": "sass --watch css/site.scss css/site-minified.css",
-    "start": "npm-run-all --parallel --omit=dev start:express watch:sass"
+    "start": "npm-run-all --parallel start:express watch:sass"
   },
   "author": "",
   "license": "ISC",
