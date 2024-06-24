@@ -7,6 +7,7 @@
         "countries": ["Mexico", "United States", "Honduras", "Nicaragua"],
         "mostSpoken": "Nahuatl",
         "population": "1.5 million",
+        "location": ["North America"],
         "image" : {
             "figure": "/images/uzo-aztecan.png",
             "figcaption": "Nahuatl was the language of the Aztec Empire and continues to be spoken and taught today.",
@@ -21,6 +22,7 @@
         "countries": ["China", "Myanmar", "Nepal", "India"],
         "mostSpoken": "Mandarin",
         "population": "1.5 billion",
+        "location": ["Asia"],
         "image" : {
             "figure": "/images/sino-tibetan.png",
             "figcaption": "Mandarin Chinese is the most spoken language in the world by native speakers.",
@@ -35,6 +37,7 @@
         "countries": ["Spain", "Brazil", "France", "Italy"],
         "mostSpoken": "Spanish",
         "population": "1.2 billion",
+        "location": ["Europe"],
         "image" : {
             "figure": "/images/romance.png",
             "figcaption": "The Romance languages evolved from Vulgar Latin.",
@@ -49,6 +52,7 @@
         "countries": ["Egypt", "Ethiopia", "Somalia", "Israel"],
         "mostSpoken": "Arabic",
         "population": "495 million",
+        "location": ["Africa"],
         "image" : {
             "figure": "/images/afroasiatic.png",
             "figcaption": "Arabic is the liturgical language of over 1.8 billion Muslims worldwide.",
@@ -63,6 +67,7 @@
         "countries": ["United States", "Germany", "Netherlands", "Sweden"],
         "mostSpoken": "English",
         "population": "2.4 billion",
+        "location": ["Europe"],
         "image" : {
             "figure": "/images/germanic.png",
             "figcaption": "English has the largest vocabulary of any language with over 1 million words.",
@@ -77,6 +82,7 @@
         "countries": ["Indonesia", "Philippines", "Madagascar", "Malaysia"],
         "mostSpoken": "Javanese",
         "population": "386 million",
+        "location": ["Southeast Asia, Africa"],
         "image" : {
             "figure": "/images/austronesian.png",
             "figcaption": "The Austronesian language family spread across the islands of the Pacific through seafaring.",
@@ -91,6 +97,7 @@
         "countries": ["Hungary", "Finland", "Estonia", "Norway"],
         "mostSpoken": "Hungarian",
         "population": "25 million",
+        "location": ["Europe"],
         "image" : {
             "figure": "/images/uralic.png",
             "figcaption": "The Uralic language family includes Finnish, Hungarian, and Estonian, spoken primarily in northern Europe and western Siberia.",
@@ -105,6 +112,7 @@
         "countries": ["Turkey", "Mongolia", "Azerbaijan", "Kazakhstan"],
         "mostSpoken": "Turkish",
         "population": "160 million",
+        "location": ["Asia"],
         "image" : {
             "figure": "/images/altaic.png",
             "figcaption": "Turkish, a major Altaic language, has influenced cultures from the Ottoman Empire to modern-day Turkey.",

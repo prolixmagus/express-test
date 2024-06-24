@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/* 
+	BTW in case it isn't obvious... the whole PSSST-CSS idea is a joke 
+	like... (it's just CSS)
+*/
+/* P reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*and stuff like this*/
+/*https://gist.github.com/murtaugh/5247154*/
+/* S etup */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} /* https://www.paulirish.com/2012/box-sizing-border-box-ftw */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+
+picture {
+  display: block;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
+
+.with-fit {
+  aspect-ratio: 3/2;
+}
+
+.with-fit img {
+  width: 100%; /*adjust*/
+  height: 100%; /*adjust*/
+}
+
+/* S setings */
+html {
+  --black: #111111;
+  --white: ##F8F9F9;
+  --green: #BBDAA4;
+  --neutral-stuffs: gray;
+  --color: #9ec9eb;
+  --highlight: #aadee9;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --corners: 10px; /* or whatevers */
+  --paper: var(--white);
+  --ink: var(--black);
+  --standard: 1200px;
+  --tight: 800px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --paper: #231a1a;
+    --ink: #ffffe2;
+    --green: #5E6D52;
+  }
+}
+/*
+body * {
+	border: 1px solid hsl(200, 100%, 80%);
+	padding: 2px;
+}
+
+body inner-column {
+	border: 1px solid hsl(360, 100%, 80%);
+	padding: 2px;
+}
+
+section:nth-of-type(odd) {
+	background-color: rgba(0,0,0,.03);
+}
+
+picture img {
+	opacity: 0;
+}
+
+picture {
+	background-color: var(--shadow);
+}
+*/
+/* S tructure */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* be at least a full viewport height */
+}
+
+main {
+  flex-grow: 1; /* fill up available space + push the footer down */
+}
+
+inner-column {
+  display: block;
+  width: 98%;
+  max-width: var(--standard); /* could be a variable in settings */
+  margin-right: auto;
+  margin-left: auto;
+  padding-inline: 1em;
+}
+
+inner-column.tight {
+  max-width: var(--tight);
+}
+
+/*.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}*/
+/* T ypography */
+.loud-voice {
+  font-family: "Merriweather", serif;
+  font-size: clamp(36px, 5vw, 50px);
+  font-weight: 500;
+}
+
+.attention-voice {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+}
+
+.small-attention-voice {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+
+.strong-voice {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.calm-voice, p, li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.caption-voice {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 65ch;
+}
+
+:is(.calm-voice, p, li) em {
+  font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+  font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+p + p {
+  margin-top: 1em;
+}
+
+h2 + p {
+  margin-top: 1rem;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: green;
+}
+
+/* C omponents */
+/* buttons and icons and smaller reusable bits here */
+.button {
+  display: block;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0.5em 1em;
+  background-color: var(--color);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* S tuff (modules) */
+.site-header {
+  padding-block: 1em;
+  background-color: var(--green);
+}
+.site-header mast-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header mast-head logo {
+  display: flex;
+  align-items: center;
+}
+.site-header mast-head logo .globe {
+  display: block;
+  max-width: 30px;
+}
+.site-header mast-head logo h1 {
+  font-family: "Merriweather";
+  font-weight: 500;
+}
+.site-header mast-head nav ul {
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+}
+.site-header mast-head nav ul li {
+  text-decoration: none;
+}
+.site-header mast-head nav ul a {
+  font-size: 0.9em;
+  font-family: "Open Sans";
+}
+
+.home h2 {
+  color: #C65201;
+}
+
+.page-header {
+  margin-block: 5vh;
+}
+.page-header p {
+  font-size: 0.9rem;
+}
+
+.family-list {
+  display: grid;
+  gap: 16px;
+}
+.family-list a {
+  display: flex;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.family-list h2::after {
+  content: "✿";
+  padding-left: 10px;
+}
+
+.family-list h2 + p {
+  margin-top: 0;
+}
+
+li.americas {
+  border: 2px solid orange;
+}
+
+li.asia {
+  border: 2px solid blue;
+}
+
+li.africa {
+  border: 2px solid red;
+}
+
+.language-detail figure + .info-section {
+  margin-top: 8px;
+}
+
+.language-card h3 {
+  border-bottom: 10px solid var(--green);
+  max-width: 250px;
+}
+
+.language-detail {
+  margin-top: 1em;
+}
+.language-detail picture {
+  box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+.language-detail figcaption {
+  margin-top: 4px;
+}
+
+.info-section li + li {
+  margin-top: 1em;
+}
+
+.info-section h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.info-section h4 p {
+  margin-top: 12px;
+}
+
+.language-card + .language-card {
+  margin-top: 5vh;
+}
+
+@media (min-width: 768px) {
+  .language-detail figure + .info-section {
+    margin-top: 0;
+  }
+  .language-detail {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+  .language-detail figure {
+    width: 70%;
+  }
+  .language-detail .info-section {
+    width: 40%;
+  }
+}
+.detail {
+  margin-top: 1em;
+}
+
+footer {
+  background-color: var(--green);
+  margin-top: 10vh;
+  min-height: 20vh;
+}
+footer h2 {
+  margin-top: 2rem;
+}
+
+/* S ections and more stuff */
+/* then other contextual styles */
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+/*# sourceMappingURL=site-minified.css.map */
