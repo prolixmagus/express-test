@@ -1,8 +1,10 @@
+import * from 'dotenv'
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 
+dotenv.config();
 let familyData = '';
 
 fs.readFile('./families.json', 'utf8', (err, data) => {
@@ -17,7 +19,7 @@ fs.readFile('./families.json', 'utf8', (err, data) => {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const PORT = 1982;
+const port = process.env.PORT || 1982;
 
 // auto serve up static files in the public directory
 app.use(express.static('public'));
@@ -55,9 +57,9 @@ app.use(function(request, response) {
   response.status(404).render('error404', {query : request.url});
 })
 
-app.listen(PORT, function(error) {
+app.listen(port, function(error) {
 	if (error) console.log(error)
-	console.log(`Server listening on PORT: ${PORT}`)
+	console.log(`Server listening on PORT: ${port}`)
 });
 
 
