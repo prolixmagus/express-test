@@ -1,7 +1,10 @@
 <%- include('header.ejs') %>
 
-<section class='home'>
-<%- include('page-header.ejs', {pageName: "Home", intro: "Let's learn about languages!"})%>
-</section>
+<header class='page-header'>
+	<inner-column>
+		<h2 class='attention-voice color'><%= page.title %></h2>
+		<p><%= page.intro %></p>
+	</inner-column>
+</header>
 
 <%- include('footer.ejs') %>
