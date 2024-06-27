@@ -290,7 +290,7 @@ code {
   font-family: "Open Sans";
 }
 
-.home h2 {
+.color {
   color: #C65201;
 }
 
@@ -317,6 +317,10 @@ code {
 
 .family-list h2 + p {
   margin-top: 0;
+}
+
+.family-list li {
+  padding: 1em;
 }
 
 li.americas {

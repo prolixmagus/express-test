@@ -2,7 +2,7 @@
     {
         "id": "A1",
         "slug": "uzo-aztecan",
-        "family": "Uto-Aztecan Languages",
+        "name": "Uto-Aztecan Languages",
         "languages": ["Nahuatl", "Huichol", "Yaqui", "Comanche"],
         "countries": ["Mexico", "United States", "Honduras", "Nicaragua"],
         "mostSpoken": "Nahuatl",
@@ -17,7 +17,7 @@
     {
         "id": "A2",
         "slug": "sino-tibetan",
-        "family": "Sino-Tibetan Languages",
+        "name": "Sino-Tibetan Languages",
         "languages": ["Mandarin", "Cantonese", "Burmese", "Tibetan"],
         "countries": ["China", "Myanmar", "Nepal", "India"],
         "mostSpoken": "Mandarin",
@@ -32,12 +32,13 @@
     {
         "id": "A3",
         "slug": "romance",
-        "family": "Romance Languages",
+        "name": "Romance Languages",
         "languages": ["Spanish", "Portuguese", "French", "Italian"],
         "countries": ["Spain", "Brazil", "France", "Italy"],
         "mostSpoken": "Spanish",
         "population": "1.2 billion",
         "location": ["Europe"],
+        "synthetic": true,
         "image" : {
             "figure": "/images/romance.png",
             "figcaption": "The Romance languages evolved from Vulgar Latin.",
@@ -47,12 +48,13 @@
     {
         "id": "A4",
         "slug": "afroasiatic",
-        "family": "Afroasiatic Languages",
+        "name": "Afroasiatic Languages",
         "languages": ["Arabic", "Amharic", "Somali", "Hebrew"],
         "countries": ["Egypt", "Ethiopia", "Somalia", "Israel"],
         "mostSpoken": "Arabic",
         "population": "495 million",
         "location": ["Africa"],
+        "synthetic": true,
         "image" : {
             "figure": "/images/afroasiatic.png",
             "figcaption": "Arabic is the liturgical language of over 1.8 billion Muslims worldwide.",
@@ -62,7 +64,7 @@
     {
         "id": "A5",
         "slug": "germanic",
-        "family": "Germanic Languages",
+        "name": "Germanic Languages",
         "languages": ["English", "German", "Dutch", "Swedish"],
         "countries": ["United States", "Germany", "Netherlands", "Sweden"],
         "mostSpoken": "English",
@@ -77,7 +79,7 @@
     {
         "id": "A6",
         "slug": "austronesian",
-        "family": "Austronesian Languages",
+        "name": "Austronesian Languages",
         "languages": ["Javanese", "Tagalog", "Malagasy", "Malay"],
         "countries": ["Indonesia", "Philippines", "Madagascar", "Malaysia"],
         "mostSpoken": "Javanese",
@@ -92,12 +94,13 @@
     {
         "id": "A7",
         "slug": "uralic",
-        "family": "Uralic Languages",
+        "name": "Uralic Languages",
         "languages": ["Hungarian", "Finnish", "Estonian", "Sami"],
         "countries": ["Hungary", "Finland", "Estonia", "Norway"],
         "mostSpoken": "Hungarian",
         "population": "25 million",
         "location": ["Europe"],
+        "synthetic": true,
         "image" : {
             "figure": "/images/uralic.png",
             "figcaption": "The Uralic language family includes Finnish, Hungarian, and Estonian, spoken primarily in northern Europe and western Siberia.",
@@ -107,12 +110,13 @@
     {
         "id": "A8",
         "slug": "altaic",
-        "family": "Altaic Languages",
+        "name": "Altaic Languages",
         "languages": ["Turkish", "Mongolian", "Azerbaijani", "Kazakh"],
         "countries": ["Turkey", "Mongolia", "Azerbaijan", "Kazakhstan"],
         "mostSpoken": "Turkish",
         "population": "160 million",
         "location": ["Asia"],
+        "synthetic": true,
         "image" : {
             "figure": "/images/altaic.png",
             "figcaption": "Turkish, a major Altaic language, has influenced cultures from the Ottoman Empire to modern-day Turkey.",
