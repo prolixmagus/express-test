@@ -1,16 +1,16 @@
 <%- include('header.ejs') %>
 
-<%- include('page-header.ejs', { 
-		intro : 'These are only 5% of the language families spoken around the world. 147 language families ... who\'s hosting the reunion?',
-		pageName : 'Family Tree', 
-		}) 
-%>
+<header class='page-header'>
+	<inner-column>
+		<h2 class='attention-voice color'>Languages</h2>
+	</inner-column>
+</header>
 
 <section>
 	<inner-column>
 		<ul class='family-list'>
 			
-			<%familyData.forEach((family) => { %>
+			<%family.forEach((family) => { %>
 
 
 				<%function checkLocation() {
@@ -25,8 +25,8 @@
 				%>
 
 				<li class=<%=checkLocation()%>>
-						<h2 class='small-attention-voice'><%= family.family %></h2>
-						<a href='/detail/<%= family.slug %>'>See more</a>
+						<h2 class='small-attention-voice'><%= family.name %></h2>
+ 						<a href='/detail/<%= family.id %>'>See more</a>
 				</li>
 
 			<% }) %>
