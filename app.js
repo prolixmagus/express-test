@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import contentful from 'contentful';
-// import feet from './families.json' with { "type": "json"};
+// import familyJson from './families.json' with { "type": "json"};
 
 
 //for CMS
